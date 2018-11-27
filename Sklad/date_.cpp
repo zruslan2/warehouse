@@ -103,6 +103,17 @@ date_ & date_::operator-=(int day)
 	return *this;
 }
 
+string date_::getDateStr() const
+{
+	string d= "";
+	d += to_string(day);
+	d += ".";
+	d += to_string(month);
+	d += ".";
+	d += to_string(year);
+	return d;
+}
+
 bool operator<(const date_ & a, const date_ & b)
 {
 	if (a.getYear() > b.getYear()) return false;

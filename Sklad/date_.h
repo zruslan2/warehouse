@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 class date_
@@ -23,6 +24,8 @@ public:
 	int maxday()const;
 	date_& operator+=(int day);
 	date_& operator-=(int day);
+
+	string getDateStr() const;
 
 };
 // home work

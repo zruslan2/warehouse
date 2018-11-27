@@ -25,3 +25,13 @@ void product::setPrice(double price)
 {
 	this->price = price;
 }
+
+string product::getInfo() const
+{
+	string str = "";
+	str += "Product name: ";
+	str += name;
+	str += d.getDateStr();
+
+	return string();
+}

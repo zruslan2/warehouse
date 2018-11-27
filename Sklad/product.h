@@ -18,5 +18,7 @@ public:
 	string getName()const { return name; }
 	date_ getDate()const { return d; }
 	double getPrice()const { return price; }
+
+	virtual string getInfo() const;
 };
 
